@@ -49,5 +49,5 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"afedorov1971_test_project_key" /o:"afedorov1971" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           dotnet restore
           dotnet build --configuration release --no-restore
-          dotnet test --collect "Code Coverage" --no-build --verbosity normal
+          dotnet test --collect "Code Coverage" --verbosity normal
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
