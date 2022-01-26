@@ -12,5 +12,7 @@ namespace TestGithubActionsWithSonar
 		{
 			return x + y;
 		}
+
+		public int Sub(int x, int y) => x - y;
 	}
 }

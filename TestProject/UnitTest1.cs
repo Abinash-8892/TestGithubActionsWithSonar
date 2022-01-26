@@ -18,5 +18,13 @@ namespace TestProject
 
 			t.Add(5, 3).Should().Be(8);
 		}
+
+		[Test]
+		public void Test2()
+		{
+			var t = new TestCalculator();
+
+			t.Sub(5, 3).Should().Be(2);
+		}
 	}
 }

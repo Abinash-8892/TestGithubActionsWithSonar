@@ -2,11 +2,14 @@
 
 namespace TestGithubActionsWithSonar
 {
-	class Program
+	internal class Program
 	{
-		static void Main(string[] args)
+		private static void Main(string[] args)
 		{
 			Console.WriteLine("Hello World!");
+			var t = new TestCalculator();
+			Console.WriteLine($"{t.Add(3,5)}");
+			Console.WriteLine($"{t.Sub(1, 1)}");
 		}
 	}
 }
